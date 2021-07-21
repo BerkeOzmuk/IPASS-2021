@@ -12,7 +12,6 @@
 #define regDate 0x04
 #define regMonth 0x05
 #define regYear 0x06
-#define regOsf 0x0E
 
 int monthSize[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //Amount of days of every month
 
