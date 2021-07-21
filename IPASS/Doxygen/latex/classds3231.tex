@@ -1,0 +1,234 @@
+\hypertarget{classds3231}{}\section{ds3231 Class Reference}
+\label{classds3231}\index{ds3231@{ds3231}}
+
+
+Library of the \hyperlink{classds3231}{ds3231} rtc chip.  
+
+
+
+
+{\ttfamily \#include $<$ds3231.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classds3231_acdd3a6b3ea33bb72460fcc89ea5ef3e9}{ds3231} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&i2c\+\_\+\+Bus)
+\begin{DoxyCompactList}\small\item\em Makes object with the i2c bus. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_ac53a311085250d36ae88a851a0b9c250}{set\+Time} (int seconds, int minutes, int hours, int day, int date, int month, int year)
+\begin{DoxyCompactList}\small\item\em Sets the time. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_a01dbcd7b91ec0f810dd477b16b58031b}{get\+Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the time. \end{DoxyCompactList}\item 
+int \hyperlink{classds3231_acf29728b7e035fb3ca09ad9ef8f769d1}{get\+Seconds} ()
+\begin{DoxyCompactList}\small\item\em Returns the seconds. \end{DoxyCompactList}\item 
+int \hyperlink{classds3231_a87b0afb6d653251f345dbf89bdfa88c4}{get\+Minutes} ()
+\begin{DoxyCompactList}\small\item\em Returns the minutes. \end{DoxyCompactList}\item 
+int \hyperlink{classds3231_a711ac9181f3012073fdc82a57493340b}{get\+Hours} ()
+\begin{DoxyCompactList}\small\item\em Returns the hours. \end{DoxyCompactList}\item 
+int \hyperlink{classds3231_a8a2bdd6773998e3dc0799f6389ab11ef}{get\+Day} ()
+\begin{DoxyCompactList}\small\item\em Returns the day. \end{DoxyCompactList}\item 
+int \hyperlink{classds3231_a37b8905a4661c6961b006b339e22ac4a}{get\+Date} ()
+\begin{DoxyCompactList}\small\item\em Returns the date. \end{DoxyCompactList}\item 
+int \hyperlink{classds3231_a7e1af01368e452db3fb31a091ed06321}{get\+Month} ()
+\begin{DoxyCompactList}\small\item\em Returns the month. \end{DoxyCompactList}\item 
+int \hyperlink{classds3231_a32991ca3c1e1242a8316cd08df22b63d}{get\+Year} ()
+\begin{DoxyCompactList}\small\item\em Returns the year. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_ae78fad4364f782cc01a23670ffa3a1a4}{set\+Seconds} (int seconds)
+\begin{DoxyCompactList}\small\item\em Sets the seconds. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_a2fa4365f601b3048b28f51785aa0941e}{set\+Minutes} (int minutes)
+\begin{DoxyCompactList}\small\item\em Sets the minutes. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_a94cb9847db3e8f0072e6aad1df481164}{set\+Hours} (int hours)
+\begin{DoxyCompactList}\small\item\em Sets the hours. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_ad886fbf5b85fad7eeb44fc3be689535a}{set\+Day} (int day)
+\begin{DoxyCompactList}\small\item\em Sets the day. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_a9594709f7a4853878efe80f27084e199}{set\+Date} (int date)
+\begin{DoxyCompactList}\small\item\em Sets the date. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_a535002d35845c9435010a78f5f5eed5e}{set\+Month} (int month)
+\begin{DoxyCompactList}\small\item\em Sets the month. \end{DoxyCompactList}\item 
+void \hyperlink{classds3231_a2fde2f14ed58c3fa990f512beae14611}{set\+Year} (int year)
+\begin{DoxyCompactList}\small\item\em Sets the year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library of the \hyperlink{classds3231}{ds3231} rtc chip. 
+
+This class lets you use functions to communicate with the \hyperlink{classds3231}{ds3231} rtc chip 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classds3231_acdd3a6b3ea33bb72460fcc89ea5ef3e9}\label{classds3231_acdd3a6b3ea33bb72460fcc89ea5ef3e9}} 
+\index{ds3231@{ds3231}!ds3231@{ds3231}}
+\index{ds3231@{ds3231}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{ds3231()}{ds3231()}}
+{\footnotesize\ttfamily ds3231\+::ds3231 (\begin{DoxyParamCaption}\item[{hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&}]{i2c\+\_\+\+Bus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Makes object with the i2c bus. 
+
+This constructor makes a object with the i2c bus. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classds3231_a37b8905a4661c6961b006b339e22ac4a}\label{classds3231_a37b8905a4661c6961b006b339e22ac4a}} 
+\index{ds3231@{ds3231}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily int ds3231\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the date. 
+
+This functions returns the date. First it writes to the right registry to point out the registry it wants to read from. Then it converts the value of the date from binary to decimals and it reads the date. \mbox{\Hypertarget{classds3231_a8a2bdd6773998e3dc0799f6389ab11ef}\label{classds3231_a8a2bdd6773998e3dc0799f6389ab11ef}} 
+\index{ds3231@{ds3231}!get\+Day@{get\+Day}}
+\index{get\+Day@{get\+Day}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{get\+Day()}{getDay()}}
+{\footnotesize\ttfamily int ds3231\+::get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the day. 
+
+This functions returns the day. First it writes to the right registry to point out the registry it wants to read from. Then it converts the value of the day from binary to decimals and it reads the day. \mbox{\Hypertarget{classds3231_a711ac9181f3012073fdc82a57493340b}\label{classds3231_a711ac9181f3012073fdc82a57493340b}} 
+\index{ds3231@{ds3231}!get\+Hours@{get\+Hours}}
+\index{get\+Hours@{get\+Hours}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{get\+Hours()}{getHours()}}
+{\footnotesize\ttfamily int ds3231\+::get\+Hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the hours. 
+
+This functions returns the hours. First it writes to the right registry to point out the registry it wants to read from. Then it converts the value of the hours from binary to decimals and it reads the hours. \mbox{\Hypertarget{classds3231_a87b0afb6d653251f345dbf89bdfa88c4}\label{classds3231_a87b0afb6d653251f345dbf89bdfa88c4}} 
+\index{ds3231@{ds3231}!get\+Minutes@{get\+Minutes}}
+\index{get\+Minutes@{get\+Minutes}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{get\+Minutes()}{getMinutes()}}
+{\footnotesize\ttfamily int ds3231\+::get\+Minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the minutes. 
+
+This functions returns the minutes. First it writes to the right registry to point out the registry it wants to read from. Then it converts the value of the minutes from binary to decimals and it reads the minutes. \mbox{\Hypertarget{classds3231_a7e1af01368e452db3fb31a091ed06321}\label{classds3231_a7e1af01368e452db3fb31a091ed06321}} 
+\index{ds3231@{ds3231}!get\+Month@{get\+Month}}
+\index{get\+Month@{get\+Month}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{get\+Month()}{getMonth()}}
+{\footnotesize\ttfamily int ds3231\+::get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the month. 
+
+This functions returns the month. First it writes to the right registry to point out the registry it wants to read from. Then it converts the value of the month from binary to decimals and it reads the month. \mbox{\Hypertarget{classds3231_acf29728b7e035fb3ca09ad9ef8f769d1}\label{classds3231_acf29728b7e035fb3ca09ad9ef8f769d1}} 
+\index{ds3231@{ds3231}!get\+Seconds@{get\+Seconds}}
+\index{get\+Seconds@{get\+Seconds}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{get\+Seconds()}{getSeconds()}}
+{\footnotesize\ttfamily int ds3231\+::get\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the seconds. 
+
+This functions returns the seconds. First it writes to the right registry to point out the registry it wants to read from. Then it converts the value of the seconds from binary to decimals and it reads the seconds. \mbox{\Hypertarget{classds3231_a01dbcd7b91ec0f810dd477b16b58031b}\label{classds3231_a01dbcd7b91ec0f810dd477b16b58031b}} 
+\index{ds3231@{ds3231}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{get\+Time()}{getTime()}}
+{\footnotesize\ttfamily void ds3231\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the time. 
+
+This functions returns the time and date by calling all get functions. \mbox{\Hypertarget{classds3231_a32991ca3c1e1242a8316cd08df22b63d}\label{classds3231_a32991ca3c1e1242a8316cd08df22b63d}} 
+\index{ds3231@{ds3231}!get\+Year@{get\+Year}}
+\index{get\+Year@{get\+Year}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{get\+Year()}{getYear()}}
+{\footnotesize\ttfamily int ds3231\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the year. 
+
+This functions returns the year. First it writes to the right registry to point out the registry it wants to read from. Then it converts the value of the year from binary to decimals and it reads the year. \mbox{\Hypertarget{classds3231_a9594709f7a4853878efe80f27084e199}\label{classds3231_a9594709f7a4853878efe80f27084e199}} 
+\index{ds3231@{ds3231}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{set\+Date()}{setDate()}}
+{\footnotesize\ttfamily void ds3231\+::set\+Date (\begin{DoxyParamCaption}\item[{int}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the date. 
+
+This functions sets the date in the date registry. First it checks if the value that is givin is valid. If the value is greater than the amount of days in that month it becomes 1. If it is smaller then 1 it becomes the last day of that month. After the check it writes to the right address, the right registry, the value converted from decimals to binary. \mbox{\Hypertarget{classds3231_ad886fbf5b85fad7eeb44fc3be689535a}\label{classds3231_ad886fbf5b85fad7eeb44fc3be689535a}} 
+\index{ds3231@{ds3231}!set\+Day@{set\+Day}}
+\index{set\+Day@{set\+Day}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{set\+Day()}{setDay()}}
+{\footnotesize\ttfamily void ds3231\+::set\+Day (\begin{DoxyParamCaption}\item[{int}]{day }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the day. 
+
+This functions sets the day in the day registry. First it checks if the value that is givin is valid. If the value is greater than 7 it becomes 1. If it is smaller then 1 it becomes 7. After the check it writes to the right address, the right registry, the value converted from decimals to binary. \mbox{\Hypertarget{classds3231_a94cb9847db3e8f0072e6aad1df481164}\label{classds3231_a94cb9847db3e8f0072e6aad1df481164}} 
+\index{ds3231@{ds3231}!set\+Hours@{set\+Hours}}
+\index{set\+Hours@{set\+Hours}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{set\+Hours()}{setHours()}}
+{\footnotesize\ttfamily void ds3231\+::set\+Hours (\begin{DoxyParamCaption}\item[{int}]{hours }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the hours. 
+
+This functions sets the hours in the hours registry. First it checks if the value that is givin is valid. If the value is greater than 23 it becomes 0. If it is smaller then 0 it becomes 23. After the check it writes to the right address, the right registry, the value converted from decimals to binary. \mbox{\Hypertarget{classds3231_a2fa4365f601b3048b28f51785aa0941e}\label{classds3231_a2fa4365f601b3048b28f51785aa0941e}} 
+\index{ds3231@{ds3231}!set\+Minutes@{set\+Minutes}}
+\index{set\+Minutes@{set\+Minutes}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{set\+Minutes()}{setMinutes()}}
+{\footnotesize\ttfamily void ds3231\+::set\+Minutes (\begin{DoxyParamCaption}\item[{int}]{minutes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the minutes. 
+
+This functions sets the minutes in the minutes registry. First it checks if the value that is givin is valid. If the value is greater than 59 it becomes 0. If it is smaller then 0 it becomes 59. After the check it writes to the right address, the right registry, the value converted from decimals to binary. \mbox{\Hypertarget{classds3231_a535002d35845c9435010a78f5f5eed5e}\label{classds3231_a535002d35845c9435010a78f5f5eed5e}} 
+\index{ds3231@{ds3231}!set\+Month@{set\+Month}}
+\index{set\+Month@{set\+Month}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{set\+Month()}{setMonth()}}
+{\footnotesize\ttfamily void ds3231\+::set\+Month (\begin{DoxyParamCaption}\item[{int}]{month }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the month. 
+
+This functions sets the month in the month registry. First it checks if the value that is givin is valid. If the value is greater than 12 it becomes 1. If it is smaller then 1 it becomes 12. After the check it writes to the right address, the right registry, the value converted from decimals to binary. \mbox{\Hypertarget{classds3231_ae78fad4364f782cc01a23670ffa3a1a4}\label{classds3231_ae78fad4364f782cc01a23670ffa3a1a4}} 
+\index{ds3231@{ds3231}!set\+Seconds@{set\+Seconds}}
+\index{set\+Seconds@{set\+Seconds}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{set\+Seconds()}{setSeconds()}}
+{\footnotesize\ttfamily void ds3231\+::set\+Seconds (\begin{DoxyParamCaption}\item[{int}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the seconds. 
+
+This functions sets the seconds in the seconds registry. First it checks if the value that is givin is valid. If the value is greater than 59 it becomes 0. If it is smaller then 0 it becomes 59. After the check it writes to the right address, the right registry, the value converted from decimals to binary. \mbox{\Hypertarget{classds3231_ac53a311085250d36ae88a851a0b9c250}\label{classds3231_ac53a311085250d36ae88a851a0b9c250}} 
+\index{ds3231@{ds3231}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{set\+Time()}{setTime()}}
+{\footnotesize\ttfamily void ds3231\+::set\+Time (\begin{DoxyParamCaption}\item[{int}]{seconds,  }\item[{int}]{minutes,  }\item[{int}]{hours,  }\item[{int}]{day,  }\item[{int}]{date,  }\item[{int}]{month,  }\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the time. 
+
+This functions sets the time and date by calling all set functions and passing the right time. \mbox{\Hypertarget{classds3231_a2fde2f14ed58c3fa990f512beae14611}\label{classds3231_a2fde2f14ed58c3fa990f512beae14611}} 
+\index{ds3231@{ds3231}!set\+Year@{set\+Year}}
+\index{set\+Year@{set\+Year}!ds3231@{ds3231}}
+\subsubsection{\texorpdfstring{set\+Year()}{setYear()}}
+{\footnotesize\ttfamily void ds3231\+::set\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the year. 
+
+This functions sets the year in the year registry. First it checks if the value that is givin is valid. If the value is greater than 99 it becomes 0. If it is smaller then 0 it becomes 99. After the check it writes to the right address, the right registry, the value converted from decimals to binary. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ds3231.\+hpp\end{DoxyCompactItemize}
