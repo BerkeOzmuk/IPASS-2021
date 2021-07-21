@@ -24,12 +24,12 @@ int main( void ){
 
    int state = 0;
 
-   clock.setTime(0,59,35,7,18,7,21);
-   
+   clock.setTime(30,58,11,1,0,0,0);
+
    for(;;){     
    display 
       << "\f" << clock.getHours() << ":" << clock.getMinutes() << ":" << clock.getSeconds()  
-      << "\n" << days[clock.getDay()]
+      << "\n" << days[clock.getDay() - 1]
       << "\t0404" << clock.getDate() << "-" << clock.getMonth() << "-" << (clock.getYear() + 2000) 
       << "\t0406" << states[state]
       << hwlib::flush; 
@@ -50,12 +50,7 @@ int main( void ){
                   clock.setMinutes(clock.getMinutes() + 1);
                }
                else if(!leftSw.read()){
-                  if(clock.getMinutes() <= 0){
-                     clock.setMinutes(59);
-                  }
-                  else{
-                     clock.setMinutes(clock.getMinutes() - 1);
-                  }
+                  clock.setMinutes(clock.getMinutes() - 1);
                }
                else if(!oke.read()){
                   break;
@@ -66,12 +61,7 @@ int main( void ){
                   clock.setHours(clock.getHours() + 1);
                }
                else if(!leftSw.read()){
-                  if(clock.getHours() <= 0){
-                     clock.setHours(23);
-                  }
-                  else{
-                     clock.setHours(clock.getHours() - 1);
-                  }
+                  clock.setHours(clock.getHours() - 1);
                }
                else if(!oke.read()){
                   break;
@@ -82,12 +72,7 @@ int main( void ){
                   clock.setDay(clock.getDay() + 1);
                }
                else if(!leftSw.read()){
-                  if(clock.getDay() <= 1){
-                     clock.setDay(6);
-                  }
-                  else{
-                     clock.setDay(clock.getDay() - 1);
-                  }
+                  clock.setDay(clock.getDay() - 1);
                }
                else if(!oke.read()){
                   break;
@@ -98,12 +83,7 @@ int main( void ){
                   clock.setDate(clock.getDate() + 1);
                }
                else if(!leftSw.read()){
-                  if(clock.getDate() <= 1){
-                     clock.setDate(monthSize[clock.getMonth() - 1]);
-                  }
-                  else{
-                     clock.setDate(clock.getDate() - 1);
-                  }
+                  clock.setDate(clock.getDate() - 1);
                }
                else if(!oke.read()){
                   break;
@@ -114,12 +94,7 @@ int main( void ){
                   clock.setMonth(clock.getMonth() + 1);
                }
                else if(!leftSw.read()){
-                  if(clock.getMonth() <= 1){
-                     clock.setMonth(12);
-                  }
-                  else{
-                     clock.setMonth(clock.getMonth() - 1);
-                  }
+                  clock.setMonth(clock.getMonth() - 1);
                }
                else if(!oke.read()){
                   break;
@@ -130,12 +105,7 @@ int main( void ){
                   clock.setYear(clock.getYear() + 1);
                }
                else if(!leftSw.read()){
-                  if(clock.getYear() <= 0){
-                     clock.setYear(99);
-                  }
-                  else{
-                     clock.setYear(clock.getYear() - 1);
-                  }
+                  clock.setYear(clock.getYear() - 1);
                }
                else if(!oke.read()){
                   break;
@@ -144,7 +114,7 @@ int main( void ){
             
             display 
                << "\f" << clock.getHours() << ":" << clock.getMinutes() << ":" << clock.getSeconds()  
-               << "\n" << days[clock.getDay()]
+               << "\n" << days[clock.getDay() - 1]
                << "\t0404" << clock.getDate() << "-" << clock.getMonth() << "-" << (clock.getYear() + 2000) 
                << "\t0406" << states[state]
                << hwlib::flush;

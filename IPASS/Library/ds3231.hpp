@@ -102,6 +102,9 @@ public:
         if(seconds > 59){
             seconds = 0;
         }
+        else if(seconds < 0){
+            seconds = 59;
+        }
         auto writeTo = i2c_Bus.write(address);
         writeTo.write(0x00);
         writeTo.write(DecToBcd(seconds));
@@ -110,6 +113,9 @@ public:
     void setMinutes(int minutes){
         if(minutes > 59){
             minutes = 0;
+        }
+        else if(minutes < 0){
+            minutes = 59;
         }
         auto writeTo = i2c_Bus.write(address);
         writeTo.write(0x01);
@@ -120,14 +126,20 @@ public:
         if(hours > 23){
             hours = 0;
         }
+        else if(hours < 0){
+            hours = 23;
+        }
         auto writeTo = i2c_Bus.write(address);
         writeTo.write(0x02);
         writeTo.write(DecToBcd(hours));
     }
 
     void setDay(int day){
-        if(day > 6){
-            day = 0;
+        if(day > 7){
+            day = 1;
+        }
+        else if(day < 1){
+            day = 7;
         }
         auto writeTo = i2c_Bus.write(address);
         writeTo.write(0x03);
@@ -138,6 +150,9 @@ public:
         if(date > monthSize[getMonth() - 1]){
             date = 1;
         }
+        else if(date < 1){
+            date = monthSize[getMonth() - 1];
+        }
         auto writeTo = i2c_Bus.write(address);
         writeTo.write(0x04);
         writeTo.write(DecToBcd(date));
@@ -147,6 +162,9 @@ public:
         if(month > 12){
             month = 1;
         }
+        else if(month < 1){
+            month = 12;
+        }
         auto writeTo = i2c_Bus.write(address);
         writeTo.write(0x05);
         writeTo.write(DecToBcd(month));
@@ -155,6 +173,9 @@ public:
     void setYear(int year){
         if(year > 99){
             year = 0;
+        }
+        else if(year < 0){
+            year = 99;
         }
         auto writeTo = i2c_Bus.write(address);
         writeTo.write(0x06);
@@ -173,7 +194,6 @@ public:
         writeTo.write(0);
     }
 
-    
 };
 
 #endif
